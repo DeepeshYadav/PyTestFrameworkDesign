@@ -18,3 +18,5 @@ DISPLAY_ALERT_ID = 'alert'
 DISPLAY_CONFIRM_BOX_ID = 'confirm'
 DISPLAY_PROMPT_BOX_ID = 'prompt'
 MESSAGE_LOCATOR_ID = 'msg'
+
+################## Handle Multiple Browser Windows ################
