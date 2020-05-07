@@ -27,5 +27,15 @@ Static Wait :
 
 # How to select value from drop using select class
 
+# generate html report :
+  -> Have to install pytest-html package
+  -> pip install pytest-html
+  -> command to run: pytest -v --html=C://report//report.html  <TestFileName>
+
+
+# Read data excel sheet :
+ -> have to install package openpyxl
+ -> pip install open openpyxl
+
 
 

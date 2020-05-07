@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import openpyxl
 
 wait = WebDriverWait(driver, 20)
 # This is explicit wait which will apply on specific element.
@@ -103,5 +104,20 @@ def handle_prompt_box(driver : webdriver, input=None):
     else:
         alert.dismiss()
         return None
+
+
+
+def get_data_from_excel(path, row, coln):
+    """This function will read data from excel sheet and provide values to use.
+
+    :param str path: excel file path
+    :param int row: row number
+    :param int coln: coln number
+    :return: str
+    """
+    wb = openpyxl.load_workbook(path)
+    sheet_obj = wb.active
+    data = sheet_obj.cell(row, coln).value
+    return data
 
 

@@ -14,3 +14,5 @@ CONFIRM_CANCEL_MSG = 'You pressed Cancel on Confirm Box.'
 
 ACCEPT_CONFIRM = False
 INPUT_NAME = 'Sagar'
+
+EXCEL_PATH = 'testdata.xlsx'
